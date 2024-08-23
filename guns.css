@@ -1,0 +1,87 @@
+body{
+  background: #d8d8d8;
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/flag-with-grunge-background_1297881-218.jpg?size=626&ext=jpg&ga=GA1.1.2021332125.1719995308&semt=ais_hybrid);
+  background-size: cover;
+}
+
+html {
+  cursor: url('blackcrosshair.cur'), auto;
+  height: 100%;
+}
+
+button{
+  color: #b44b4b;
+  padding: 5px 15px;
+  background: transparent;
+  border: 1px solid #f58181;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #d66969;
+  margin-left: 10px;
+}
+
+button:hover {
+  color: black;
+  transform: scale(1.3)translateY(-5px);
+  background-color: #b74b4b;
+  box-shadow: 0 0 10px #b74b4b;
+}
+
+
+
+
+.gun-name {
+  color: white;
+}
+
+.image {
+  margin-left: 1050px;
+  border-color: black;
+  border-style: solid
+}
+
+.image-2 {
+  margin-bottom: 100px;
+}
+
+.content p{
+  font-size: clamp(0,4rem, 0.2rem + 9vw, 1rem);
+}
+
+.cuh{
+  position: absolute;
+  top:50%;
+  left: 50.4%;
+  padding: 0;
+  margin: 0; 
+  transform: translate(-50%, -50%);
+  display: flex;
+  clip-path: circle();
+  width: 110px;
+}
+
+.back{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+  .back{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media ( max-aspect-ratio: 16/9){
+  .back{
+    width: auto;
+    height: 100%;
+  }
+}
